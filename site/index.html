@@ -1,120 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>devruler — Apps</title>
-<meta name="description" content="Mobile apps by devruler and their privacy policies.">
-<meta name="robots" content="index, follow">
-<style>
-:root {
-  color-scheme: light dark;
-  --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a;
-  --accent: #4c5fd7; --border: #e2e2e6; --chip: #f4f4f7;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #14141a; --fg: #e8e8ec; --muted: #a0a0aa;
-          --accent: #8f9cf0; --border: #2c2c36; --chip: #1e1e26; }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0; background: var(--bg); color: var(--fg);
-  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-}
-main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .5rem; }
-h2 { font-size: 1.15rem; margin: 0 0 .25rem; }
-.intro { color: var(--muted); margin: 0 0 1.75rem; }
-a { color: var(--accent); overflow-wrap: anywhere; }
-nav { display: flex; gap: .5rem; margin-bottom: 1.75rem; flex-wrap: wrap; }
-nav button {
-  font: inherit; font-size: .9rem; cursor: pointer;
-  padding: .35rem .85rem; border-radius: 999px;
-  border: 1px solid var(--border); background: var(--chip); color: var(--fg);
-}
-nav button[aria-selected="true"] {
-  background: var(--accent); border-color: var(--accent); color: #fff;
-}
-.apps { display: grid; gap: 1rem; }
-.app {
-  padding: 1.25rem; border: 1px solid var(--border); border-radius: 12px;
-  background: var(--chip);
-}
-.app p { margin: 0 0 .75rem; color: var(--muted); }
-footer {
-  margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border);
-  color: var(--muted); font-size: .85rem;
-}
-</style>
+<title>devruler apps</title>
+<meta name="description" content="Download links, privacy policies and support for every devruler app.">
+<link rel="canonical" href="https://apps.devruler.com/">
+<meta property="og:title" content="devruler apps">
+<meta property="og:description" content="Download links, privacy policies and support for every devruler app.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://apps.devruler.com/">
+<meta property="og:image" content="https://apps.devruler.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f3ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161413" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<script>(function(){var m=document.cookie.match(/(?:^|;\s*)devruler-lang=(en|tr)/),l=m&&m[1];if(!l)try{l=localStorage.getItem("devruler-lang")}catch(e){}document.documentElement.lang=l==="tr"||l==="en"?l:((navigator.language||"en").toLowerCase().indexOf("tr")===0?"tr":"en")})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
+<body class="">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://devruler.com/" aria-label="devruler">
+      <img class="logo-light" src="/assets/devruler-logo.svg" alt="devruler" width="126" height="28">
+      <img class="logo-dark" src="/assets/devruler-logo-dark.svg" alt="devruler" width="126" height="28">
+    </a>
+    <nav aria-label="Main">
+      <a href="https://devruler.com/" class="opt2"><span class="i-en">Studio</span><span class="i-tr">Stüdyo</span></a><a href="https://devruler.com/#what-we-do" class="opt"><span class="i-en">What we do</span><span class="i-tr">Ne yapıyoruz</span></a><a href="/" class="" aria-current="page"><span class="i-en">Apps</span><span class="i-tr">Uygulamalar</span></a><a href="/#support" class="opt"><span class="i-en">Support</span><span class="i-tr">Destek</span></a>
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+      </div>
+      <a class="cta" href="https://devruler.com/#contact"><span class="i-en">Contact</span><span class="i-tr">İletişim</span></a>
+    </nav>
+  </div>
+</header>
 <main>
-<nav aria-label="Language">
-<button type="button" data-locale="en" aria-selected="true">English</button>
-<button type="button" data-locale="tr" aria-selected="false">Türkçe</button>
-</nav>
-<section class="locale" data-locale="en" >
-<h1>devruler Apps</h1>
-<p class="intro">Mobile apps developed by devruler.</p>
-<div class="apps">
-<div class="app">
-<h2>Cipher Tools</h2>
-<p>Encrypt and decrypt text with ciphers and passwords, right on your device.</p>
-<a href="/cipher-tools-lab/privacy/">Privacy Policy</a>
-</div>
-<div class="app">
-<h2>Square Wars</h2>
-<p>A dots-and-boxes game played against a friend or the computer.</p>
-<a href="/square-wars/privacy/">Privacy Policy</a>
-</div>
-<div class="app">
-<h2>Kutularla İngilizce</h2>
-<p>Learn English vocabulary with the Leitner box method (Turkish-language app).</p>
-<a href="/kutularla-ingilizce/privacy/">Privacy Policy (Turkish)</a> ·
-<a href="/kutularla-ingilizce/account-deletion/">Account Deletion</a>
-</div>
-</div>
+<section class="wrap hero compact">
+  <p class="eyebrow"><span class="i-en">Apps</span><span class="i-tr">Uygulamalar</span></p>
+  <h1><span class="i-en">Ideas that fit in your <span class="tagword">pocket.</span></span><span class="i-tr">Cebinize sığan <span class="tagword">fikirler.</span></span></h1>
+  <p class="lead"><span class="i-en">From ciphers to vocabulary, from games to spending. Download the live ones, take a look at what is coming.</span><span class="i-tr">Şifrelemeden kelime öğrenmeye, oyundan harcama takibine. Yayındakileri hemen indirin, yoldakilere göz atın.</span></p>
+  <div class="toolbar">
+    <div class="filters" role="group" aria-label="Filter by type">
+      <button type="button" data-filter="all" aria-pressed="true"><span class="i-en">All</span><span class="i-tr">Tümü</span> <b>15</b></button><button type="button" data-filter="app" aria-pressed="false"><span class="i-en">Apps</span><span class="i-tr">Uygulamalar</span> <b>8</b></button><button type="button" data-filter="game" aria-pressed="false"><span class="i-en">Games</span><span class="i-tr">Oyunlar</span> <b>3</b></button><button type="button" data-filter="lab" aria-pressed="false"><span class="i-en">Lab</span><span class="i-tr">Laboratuvar</span> <b>4</b></button>
+    </div>
+    <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <span class="sr"><span class="i-en">Search apps</span><span class="i-tr">Uygulama ara</span></span><input id="app-search" type="search" autocomplete="off" placeholder="Search" data-ph-en="Search apps" data-ph-tr="Uygulama ara"></label>
+  </div>
+  <div class="jump">
+    <a href="#available"><span class="i-en">Available</span><span class="i-tr">Yayında</span> <b>2</b></a>
+    <a href="#coming-soon"><span class="i-en">On the way</span><span class="i-tr">Yolda</span> <b>4</b></a>
+    <a href="#lab"><span class="i-en">Workshop</span><span class="i-tr">Atölye</span> <b>9</b></a>
+    <a href="#policies"><span class="i-en">Privacy</span><span class="i-tr">Gizlilik</span></a>
+  </div>
 </section>
-<section class="locale" data-locale="tr" hidden>
-<h1>devruler Uygulamaları</h1>
-<p class="intro">devruler tarafından geliştirilen mobil uygulamalar.</p>
-<div class="apps">
-<div class="app">
-<h2>Cipher Tools</h2>
-<p>Metinleri şifreleyin ve çözün; tüm işlemler cihazınızda yapılır.</p>
-<a href="/cipher-tools-lab/privacy/">Gizlilik Politikası</a>
-</div>
-<div class="app">
-<h2>Square Wars</h2>
-<p>Arkadaşınıza ya da bilgisayara karşı oynanan kutu kapmaca oyunu.</p>
-<a href="/square-wars/privacy/">Gizlilik Politikası</a>
-</div>
-<div class="app">
-<h2>Kutularla İngilizce</h2>
-<p>Leitner kutu yöntemiyle İngilizce kelime öğrenin.</p>
-<a href="/kutularla-ingilizce/privacy/">Gizlilik Politikası</a> ·
-<a href="/kutularla-ingilizce/account-deletion/">Hesap Silme</a>
-</div>
-</div>
+
+<section class="wrap sec rule" id="available" data-group>
+  <div class="head"><h2><span class="i-en">Download now</span><span class="i-tr">Şimdi indirin</span></h2><p><span class="i-en">On the App Store and Google Play.</span><span class="i-tr">App Store ve Google Play&#x27;de.</span></p></div>
+  <div class="live-grid"><article class="lcard" data-item data-cat="app" data-text="Cipher Tools A pocket workshop for ciphers Cebinizdeki şifreleme atölyesi ">
+  <div class="row"><span class="icon lg"><img src="/assets/icons/cipher-tools-lab.png" alt="" width="256" height="256" loading="lazy"></span><div><span class="pill live"><span class="i-en">Available</span><span class="i-tr">Yayında</span> · <span class="plat">iOS + Android</span></span>
+    <h3><a href="/cipher-tools-lab/">Cipher Tools</a></h3><p class="tagline"><span class="i-en">A pocket workshop for ciphers</span><span class="i-tr">Cebinizdeki şifreleme atölyesi</span></p></div></div>
+  <p class="desc"><span class="i-en">A playful way to learn how encryption works: type a message, pick a method and turn it into secret text or a QR code, then decode it back. Everything runs on your device.</span><span class="i-tr">Şifrelemenin nasıl çalıştığını eğlenerek öğrenmenin yolu: mesaj yaz, yöntem seç, gizli yazıya ya da QR koda dönüştür, sonra geri çöz. Tüm işlemler cihazında yapılır.</span></p>
+  <p class="langline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span><span class="i-en">14 languages</span><span class="i-tr">14 dil</span> · Türkçe, English, Deutsch, Français +10</span></p>
+  <div class="foot"><div class="stores"><a class="store" href="https://apps.apple.com/app/id6803540894" rel="noopener"><small>iOS</small><span>App Store</span></a><a class="store" href="https://play.google.com/store/apps/details?id=com.devruler.ciphertools" rel="noopener"><small>Android</small><span>Google Play</span></a></div><div class="links"><a href="/cipher-tools-lab/"><span class="i-en">Details</span><span class="i-tr">Detaylar</span></a><a href="/cipher-tools-lab/privacy/"><span class="i-en">Privacy policy</span><span class="i-tr">Gizlilik politikası</span></a></div></div>
+</article><article class="lcard" data-item data-cat="game" data-text="Square Wars Dots and boxes strategy duel Noktalar ve kutular düellosu ">
+  <div class="row"><span class="icon lg"><img src="/assets/icons/square-wars.png" alt="" width="256" height="256" loading="lazy"></span><div><span class="pill live"><span class="i-en">Available</span><span class="i-tr">Yayında</span> · <span class="plat">iOS + Android</span></span>
+    <h3><a href="/square-wars/">Square Wars</a></h3><p class="tagline"><span class="i-en">Dots and boxes strategy duel</span><span class="i-tr">Noktalar ve kutular düellosu</span></p></div></div>
+  <p class="desc"><span class="i-en">Classic dots and boxes in a neon-lit arena. Challenge a friend on one device or the computer, and capture more squares than your rival.</span><span class="i-tr">Klasik noktalar ve kutular oyunu neon ışıklı bir arenada. Aynı cihazda arkadaşına ya da bilgisayara meydan oku, rakibinden çok kare kap.</span></p>
+  <p class="langline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span><span class="i-en">13 languages</span><span class="i-tr">13 dil</span> · Türkçe, English, Deutsch, Français +9</span></p>
+  <div class="foot"><div class="stores"><a class="store" href="https://apps.apple.com/app/id6816978618" rel="noopener"><small>iOS</small><span>App Store</span></a><a class="store" href="https://play.google.com/store/apps/details?id=com.devruler.squarewars" rel="noopener"><small>Android</small><span>Google Play</span></a></div><div class="links"><a href="/square-wars/"><span class="i-en">Details</span><span class="i-tr">Detaylar</span></a><a href="/square-wars/privacy/"><span class="i-en">Privacy policy</span><span class="i-tr">Gizlilik politikası</span></a></div></div>
+</article></div>
 </section>
-<footer>
-devruler —
-<a href="mailto:devruler.support@gmail.com">devruler.support@gmail.com</a>
-</footer>
+
+<section class="wrap sec rule" id="coming-soon" data-group>
+  <div class="head"><h2><span class="i-en">On the way to the stores</span><span class="i-tr">Mağaza yolunda</span></h2><p><span class="i-en">Final touches in progress.</span><span class="i-tr">Son rötuşlar yapılıyor.</span></p></div>
+  <div class="soon-grid"><a class="scard" href="/kutularla-ingilizce/" data-item data-cat="app" data-text="Kutularla İngilizce Learn English words with Leitner boxes Leitner kutularıyla kelime öğren ">
+  <div class="row"><span class="icon sm"><img src="/assets/icons/kutularla-ingilizce.png" alt="" width="256" height="256" loading="lazy"></span><span class="pill soon"><span class="i-en">Coming soon</span><span class="i-tr">Yakında</span></span></div>
+  <h3>Kutularla İngilizce</h3><p><span class="i-en">Learn English words with Leitner boxes</span><span class="i-tr">Leitner kutularıyla kelime öğren</span></p><p class="langline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>Türkçe</span></p>
+</a><a class="scard" href="/manifesto/" data-item data-cat="app" data-text="Manifesto Change starts from within Dönüşüm içeriden başlar ">
+  <div class="row"><span class="icon sm" aria-hidden="true">M</span><span class="pill soon"><span class="i-en">Coming soon</span><span class="i-tr">Yakında</span></span></div>
+  <h3>Manifesto</h3><p><span class="i-en">Change starts from within</span><span class="i-tr">Dönüşüm içeriden başlar</span></p>
+</a><a class="scard" href="/ortak-ani/" data-item data-cat="app" data-text="Ortak Anı Every wedding photo in one place Düğününüzün bütün fotoğrafları tek yerde ">
+  <div class="row"><span class="icon sm" aria-hidden="true">O</span><span class="pill soon"><span class="i-en">Coming soon</span><span class="i-tr">Yakında</span></span></div>
+  <h3>Ortak Anı</h3><p><span class="i-en">Every wedding photo in one place</span><span class="i-tr">Düğününüzün bütün fotoğrafları tek yerde</span></p>
+</a><a class="scard" href="/muhasebecim/" data-item data-cat="app" data-text="Muhasebecim Spending and card tracker Harcama ve kart takibi ">
+  <div class="row"><span class="icon sm" aria-hidden="true">M</span><span class="pill soon"><span class="i-en">Coming soon</span><span class="i-tr">Yakında</span></span></div>
+  <h3>Muhasebecim</h3><p><span class="i-en">Spending and card tracker</span><span class="i-tr">Harcama ve kart takibi</span></p>
+</a></div>
+</section>
+
+<section class="wrap sec rule" id="lab" data-group>
+  <div class="head"><h2><span class="i-en">In the workshop</span><span class="i-tr">Atölyede</span></h2><p><span class="i-en">Prototypes and experiments. Some will make it to the stores one day.</span><span class="i-tr">Prototipler ve deneyler. Bazıları bir gün mağazaya çıkacak.</span></p></div>
+  <ul class="lab"><li data-item data-cat="app" data-text="Hemşire Cebi A pocket assistant for nurses Hemşireler için cep asistanı "><a href="/hemsire-cebi/"><span class="icon sm"><img src="/assets/icons/hemsire-cebi.png" alt="" width="256" height="256" loading="lazy"></span><div><h3>Hemşire Cebi</h3><p><span class="i-en">A pocket assistant for nurses</span><span class="i-tr">Hemşireler için cep asistanı</span></p></div><span class="pill paused"><span class="i-en">On hold</span><span class="i-tr">Askıda</span></span></a></li><li data-item data-cat="game" data-text="A Place For Us A home, a hope Bir yuva, bir umut "><a href="/a-place-for-us/"><span class="icon sm"><img src="/assets/icons/a-place-for-us.png" alt="" width="256" height="256" loading="lazy"></span><div><h3>A Place For Us</h3><p><span class="i-en">A home, a hope</span><span class="i-tr">Bir yuva, bir umut</span></p></div><span class="pill "><span class="i-en">Experiment</span><span class="i-tr">Deney</span></span></a></li><li data-item data-cat="app" data-text="Denta Clinic Dental clinic management Diş kliniği yönetimi "><a href="/denta-clinic/"><span class="icon sm" aria-hidden="true">D</span><div><h3>Denta Clinic</h3><p><span class="i-en">Dental clinic management</span><span class="i-tr">Diş kliniği yönetimi</span></p></div><span class="pill "><span class="i-en">Prototype</span><span class="i-tr">Prototip</span></span></a></li><li data-item data-cat="game" data-text="Viraj Open-world drifting Açık dünyada drift "><a href="/viraj/"><span class="icon sm" aria-hidden="true">V</span><div><h3>Viraj</h3><p><span class="i-en">Open-world drifting</span><span class="i-tr">Açık dünyada drift</span></p></div><span class="pill "><span class="i-en">Prototype</span><span class="i-tr">Prototip</span></span></a></li><li data-item data-cat="app" data-text="Fatura Hatırlatıcı Never miss an invoice date Fatura kesim tarihlerini kaçırmayın "><a href="/fatura-hatirlatici/"><span class="icon sm" aria-hidden="true">F</span><div><h3>Fatura Hatırlatıcı</h3><p><span class="i-en">Never miss an invoice date</span><span class="i-tr">Fatura kesim tarihlerini kaçırmayın</span></p></div><span class="pill "><span class="i-en">Prototype</span><span class="i-tr">Prototip</span></span></a></li><li data-item data-cat="lab" data-text="TouchStack Every touchpoint a brand experience Her temas noktası bir marka deneyimi "><a href="/touchstack/"><span class="icon sm" aria-hidden="true">T</span><div><h3>TouchStack</h3><p><span class="i-en">Every touchpoint a brand experience</span><span class="i-tr">Her temas noktası bir marka deneyimi</span></p></div><span class="pill "><span class="i-en">Prototype</span><span class="i-tr">Prototip</span></span></a></li><li data-item data-cat="lab" data-text="Mysterious Stories Short mystery stories Gizemli hikâyeler "><a href="/mysterious-stories/"><span class="icon sm" aria-hidden="true">M</span><div><h3>Mysterious Stories</h3><p><span class="i-en">Short mystery stories</span><span class="i-tr">Gizemli hikâyeler</span></p></div><span class="pill "><span class="i-en">Experiment</span><span class="i-tr">Deney</span></span></a></li><li data-item data-cat="lab" data-text="Kalori Hesaplama Calories from a photo of your plate Tabağın fotoğrafından kalori "><a href="/kalori-hesaplama/"><span class="icon sm" aria-hidden="true">K</span><div><h3>Kalori Hesaplama</h3><p><span class="i-en">Calories from a photo of your plate</span><span class="i-tr">Tabağın fotoğrafından kalori</span></p></div><span class="pill "><span class="i-en">Experiment</span><span class="i-tr">Deney</span></span></a></li><li data-item data-cat="lab" data-text="Masal Arkadaşım Fairy tales for children Çocuklar için masallar "><a href="/masal-arkadasim/"><span class="icon sm" aria-hidden="true">M</span><div><h3>Masal Arkadaşım</h3><p><span class="i-en">Fairy tales for children</span><span class="i-tr">Çocuklar için masallar</span></p></div><span class="pill "><span class="i-en">Experiment</span><span class="i-tr">Deney</span></span></a></li></ul>
+</section>
+<p class="wrap empty" id="no-results" hidden><span class="i-en">No app matches that search.</span><span class="i-tr">Bu aramayla eşleşen uygulama yok.</span></p>
+
+<section class="wrap sec rule" id="policies">
+  <div class="head"><h2><span class="i-en">Privacy and support</span><span class="i-tr">Gizlilik ve destek</span></h2><p><span class="i-en">Privacy and account deletion pages for each app.</span><span class="i-tr">Her uygulamanın gizlilik ve hesap silme sayfası.</span></p></div>
+  <div class="tablewrap"><table class="policies">
+    <thead><tr><th><span class="i-en">App</span><span class="i-tr">Uygulama</span></th><th><span class="i-en">Privacy policy</span><span class="i-tr">Gizlilik politikası</span></th><th><span class="i-en">Account deletion</span><span class="i-tr">Hesap silme</span></th><th><span class="i-en">Support</span><span class="i-tr">Destek</span></th></tr></thead>
+    <tbody><tr><td><a href="/cipher-tools-lab/">Cipher Tools</a></td><td><a href="/cipher-tools-lab/privacy/"><span class="i-en">Read</span><span class="i-tr">Oku</span></a></td><td class="dim">—</td><td><a href="mailto:devruler.support@gmail.com?subject=Cipher%20Tools%20support"><span class="i-en">Email</span><span class="i-tr">E-posta</span></a></td></tr><tr><td><a href="/square-wars/">Square Wars</a></td><td><a href="/square-wars/privacy/"><span class="i-en">Read</span><span class="i-tr">Oku</span></a></td><td class="dim">—</td><td><a href="mailto:devruler.support@gmail.com?subject=Square%20Wars%20support"><span class="i-en">Email</span><span class="i-tr">E-posta</span></a></td></tr><tr><td><a href="/kutularla-ingilizce/">Kutularla İngilizce</a></td><td><a href="/kutularla-ingilizce/privacy/"><span class="i-en">Read</span><span class="i-tr">Oku</span></a></td><td><a href="/kutularla-ingilizce/account-deletion/"><span class="i-en">Read</span><span class="i-tr">Oku</span></a></td><td><a href="mailto:devruler.support@gmail.com?subject=Kutularla%20İngilizce%20support"><span class="i-en">Email</span><span class="i-tr">E-posta</span></a></td></tr></tbody>
+  </table></div>
+</section>
+
+<section class="wrap" id="support" style="padding-bottom: clamp(56px, 8vw, 88px)">
+  <div class="supportbox">
+    <p class="eyebrow"><span class="i-en">Support</span><span class="i-tr">Destek</span></p>
+    <h2><span class="i-en">Stuck somewhere?</span><span class="i-tr">Takıldığınız bir yer mi var?</span></h2>
+    <p><span class="i-en">Write to us and mention the app name and your device model.</span><span class="i-tr">Bize yazın; uygulamanın adını ve cihaz modelinizi belirtin.</span></p>
+    <a class="btn" href="mailto:devruler.support@gmail.com">devruler.support@gmail.com</a>
+  </div>
+</section>
 </main>
-<script>
-const buttons = document.querySelectorAll('nav button');
-const sections = document.querySelectorAll('.locale');
-function select(locale) {
-  sections.forEach(s => { s.hidden = s.dataset.locale !== locale; });
-  buttons.forEach(b => b.setAttribute('aria-selected',
-    String(b.dataset.locale === locale)));
-  document.documentElement.lang = locale;
-}
-buttons.forEach(b => b.addEventListener('click', () => select(b.dataset.locale)));
-select((navigator.language || 'en').toLowerCase().startsWith('tr') ? 'tr' : 'en');
-</script>
+<footer class="site-foot">
+  <div class="wrap cols">
+    <div class="about">
+      <a href="https://devruler.com/" aria-label="devruler">
+        <img class="logo-light" src="/assets/devruler-logo.svg" alt="devruler" width="108" height="24">
+        <img class="logo-dark" src="/assets/devruler-logo-dark.svg" alt="devruler" width="108" height="24">
+      </a>
+      <p><span class="i-en">An independent studio that makes its own mobile apps.</span><span class="i-tr">Kendi mobil uygulamalarını yapan bağımsız stüdyo.</span></p>
+    </div>
+    <div><h2><span class="i-en">Studio</span><span class="i-tr">Stüdyo</span></h2><ul>
+      <li><a href="https://devruler.com/#what-we-do"><span class="i-en">What we do</span><span class="i-tr">Ne yapıyoruz</span></a></li>
+      <li><a href="https://devruler.com/#process"><span class="i-en">Process</span><span class="i-tr">Süreç</span></a></li>
+      <li><a href="https://devruler.com/#contact"><span class="i-en">Contact</span><span class="i-tr">İletişim</span></a></li></ul></div>
+    <div><h2><span class="i-en">Apps</span><span class="i-tr">Uygulamalar</span></h2><ul>
+      <li><a href="/#available"><span class="i-en">Available</span><span class="i-tr">Yayında</span></a></li>
+      <li><a href="/#coming-soon"><span class="i-en">On the way</span><span class="i-tr">Yolda</span></a></li>
+      <li><a href="/#lab"><span class="i-en">In the workshop</span><span class="i-tr">Atölye</span></a></li></ul></div>
+    <div><h2><span class="i-en">Support</span><span class="i-tr">Destek</span></h2><ul>
+      <li><a href="/#policies"><span class="i-en">Privacy policies</span><span class="i-tr">Gizlilik politikaları</span></a></li>
+      <li><a href="/#policies"><span class="i-en">Account deletion</span><span class="i-tr">Hesap silme</span></a></li>
+      <li><a href="mailto:devruler.support@gmail.com">devruler.support@gmail.com</a></li></ul></div>
+  </div>
+  <div class="wrap base"><span>© 2026 devruler</span><span class="mono"><span class="i-en">We measure, cut and ship ideas.</span><span class="i-tr">Fikri ölçer, biçer, yayınlarız.</span></span></div>
+</footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

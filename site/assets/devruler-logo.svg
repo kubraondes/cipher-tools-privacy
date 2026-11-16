@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="267" viewBox="-61.89 -176 925.87 206"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#F03A2E"/><stop offset="1" stop-color="#FF7433"/></linearGradient></defs><path d="M-39.67 30L331.83 30A18 18 0 0 0 349.44 15.74L385.57 -154.26A18 18 0 0 0 367.97 -176L-3.53 -176A18 18 0 0 0 -21.14 -161.74L-57.27 8.26A18 18 0 0 0 -39.67 30Z" fill="url(#g)"/><g fill="#fff" stroke="#fff" >
+<path transform="translate(0 0)" d="M51.6 -88.78A38.78 38.78 0 1 0 51.6 -11.22A38.78 38.78 0 1 0 51.6 -88.78Z" fill="none" stroke-width="25.65"/>
+<path transform="translate(0 0)" d="M91.28 0V-146" fill="none" stroke-width="25.65"/>
+<path transform="translate(122.1 0)" d="M90.38 -50A38.78 38.78 0 1 0 82.97 -27.21" fill="none" stroke-width="25.65"/>
+<path transform="translate(122.1 0)" d="M12.82 -37.17L101.58 -37.17A51.6 51.6 0 0 0 101.58 -62.83L12.82 -62.83Z" stroke="none"/>
+<path transform="translate(232.3 0)" d="M0 -100L26.36 -100L53 -43.31L79.64 -100L106 -100L59 0L47 0Z" stroke="none"/>
+</g><g fill="#1E1B1A" stroke="#1E1B1A" >
+<path transform="translate(408.04 0)" d="M13.5 0V-100" fill="none" stroke-width="27"/>
+<path transform="translate(408.04 0)" d="M13.5 -38V-50A38.1 38.1 0 0 1 75.06 -80.02" fill="none" stroke-width="27"/>
+<path transform="translate(496.41 0)" d="M13.5 -100V-46.9A35 35 0 0 0 83.5 -46.9V-100" fill="none" stroke-width="27"/>
+<path transform="translate(496.41 0)" d="M83.5 -100V0" fill="none" stroke-width="27"/>
+<path transform="translate(614.41 0)" d="M13.5 0V-146" fill="none" stroke-width="27"/>
+<path transform="translate(659.41 0)" d="M89.7 -50A38.1 38.1 0 1 0 82.42 -27.61" fill="none" stroke-width="27"/>
+<path transform="translate(780.61 0)" d="M13.5 0V-100" fill="none" stroke-width="27"/>
+<path transform="translate(780.61 0)" d="M13.5 -38V-50A38.1 38.1 0 0 1 75.06 -80.02" fill="none" stroke-width="27"/>
+<path transform="translate(659.41 0)" d="M13.5 -36.5L101.4 -36.5A51.6 51.6 0 0 0 101.4 -63.5L13.5 -63.5Z" stroke="none"/>
+</g></svg>

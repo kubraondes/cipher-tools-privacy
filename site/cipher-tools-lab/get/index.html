@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cipher Tools — Download</title>
+<meta name="description" content="Download Cipher Tools on the App Store or Google Play.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://apps.devruler.com/cipher-tools-lab/get/">
+<link rel="icon" href="icon.png">
+<meta property="og:title" content="Cipher Tools">
+<meta property="og:description" content="Ciphers, AES & secret QR codes">
+<meta property="og:image" content="https://apps.devruler.com/cipher-tools-lab/get/icon.png">
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #0b1622; --fg: #e8f4f2; --muted: #8fa6ad;
+  --accent: #1de9b6; --border: #1f3a40; --chip: #12222e;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg);
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  display: flex; align-items: center; justify-content: center;
+  -webkit-text-size-adjust: 100%;
+}
+main { width: 100%; max-width: 24rem; padding: 2.5rem 1.25rem; text-align: center; }
+img { width: 112px; height: 112px; border-radius: 26px;
+      box-shadow: 0 0 40px rgba(29, 233, 182, .25); }
+h1 { font-size: 1.6rem; margin: 1.25rem 0 .25rem; }
+p { color: var(--muted); margin: 0 0 2rem; }
+.stores { display: grid; gap: .75rem; }
+.stores a {
+  display: block; padding: .9rem 1rem; border-radius: 14px;
+  border: 1px solid var(--border); background: var(--chip);
+  color: var(--fg); text-decoration: none; font-weight: 600;
+}
+.stores a.primary { background: var(--accent); border-color: var(--accent); color: #062019; }
+.stores small { display: block; font-weight: 400; font-size: .8rem; opacity: .75; }
+footer { margin-top: 2.5rem; font-size: .8rem; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<img src="icon.png" alt="">
+<h1 id="name">Cipher Tools</h1>
+<p id="tagline">Ciphers, AES &amp; secret QR codes</p>
+<div class="stores">
+  <a id="ios" href="https://apps.apple.com/app/id6803540894"><small id="dl1">Download free</small>App Store</a>
+  <a id="android" href="https://play.google.com/store/apps/details?id=com.devruler.ciphertools"><small id="dl2">Download free</small>Google Play</a>
+</div>
+<footer><a href="/cipher-tools-lab/privacy/">Privacy Policy</a></footer>
+</main>
+<script>
+// [app name, tagline, download label] per app locale.
+const L = {
+  en: ["Cipher Tools", "Ciphers, AES & secret QR codes", "Download free"],
+  tr: ["Şifreleme Araçları", "Şifreler, AES ve gizli QR kod", "Ücretsiz indir"],
+  de: ["Verschlüsselungs-Tools", "Chiffren, AES & geheime QR-Codes", "Kostenlos laden"],
+  fr: ["Outils de chiffrement", "Chiffres, AES et QR secrets", "Télécharger gratuitement"],
+  es: ["Herramientas de cifrado", "Cifrados, AES y QR secretos", "Descargar gratis"],
+  it: ["Strumenti di cifratura", "Cifrari, AES e QR segreti", "Scarica gratis"],
+  pt: ["Ferramentas de Cifra", "Cifras, AES e QR secretos", "Baixar grátis"],
+  ru: ["Инструменты шифрования", "Шифры, AES и секретные QR", "Скачать бесплатно"],
+  ar: ["أدوات التشفير", "شيفرات وAES ورموز QR سرية", "حمّل مجانًا"],
+  hi: ["सिफर उपकरण", "सिफर, AES और गुप्त QR कोड", "मुफ़्त डाउनलोड करें"],
+  id: ["Alat Sandi", "Sandi, AES & kode QR rahasia", "Unduh gratis"],
+  az: ["Şifrələmə Alətləri", "Şifrələr, AES və gizli QR kod", "Pulsuz yüklə"],
+  ja: ["暗号化ツール", "古典暗号・AES・秘密のQRコード", "無料でダウンロード"],
+  ko: ["암호화 도구", "고전 암호, AES, 비밀 QR 코드", "무료 다운로드"],
+};
+const lang = (navigator.language || "en").slice(0, 2).toLowerCase();
+const t = L[lang] || L.en;
+document.documentElement.lang = lang in L ? lang : "en";
+if (lang === "ar") document.documentElement.dir = "rtl";
+document.getElementById("name").textContent = t[0];
+document.getElementById("tagline").textContent = t[1];
+document.getElementById("dl1").textContent = t[2];
+document.getElementById("dl2").textContent = t[2];
+document.title = t[0];
+
+// ?src=tiktok / ?src=instagram is passed to Google Play as the install
+// referrer, so Play Console shows which bio link brought the install.
+const src = (new URLSearchParams(location.search).get("src") || "")
+  .toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 32);
+const android = document.getElementById("android");
+if (src) {
+  android.href += "&referrer=" + encodeURIComponent(
+    "utm_source=" + src + "&utm_medium=social&utm_campaign=bio");
+}
+
+const ua = navigator.userAgent;
+const isIOS = /iPhone|iPad|iPod/.test(ua) ||
+  (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+const isAndroid = /Android/.test(ua);
+const target = isIOS ? document.getElementById("ios")
+             : isAndroid ? android : null;
+if (target) {
+  target.classList.add("primary");
+  location.replace(target.href);
+}
+</script>
+</body>
+</html>
