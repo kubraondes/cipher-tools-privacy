@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko" data-fixed-lang>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cipher Tools — 고전 암호, AES, 비밀 QR 코드</title>
+<meta name="description" content="어떤 텍스트든 비밀 메시지로 바꿔 보세요. 고전 암호, 현대적인 AES 암호화, 비밀번호 보호 QR 코드를 모두 오프라인으로, 휴대폰에서 바로 사용할 수 있습니다.">
+<link rel="canonical" href="https://apps.devruler.com/cipher-tools-lab/ko/">
+<meta property="og:title" content="Cipher Tools — 고전 암호, AES, 비밀 QR 코드">
+<meta property="og:description" content="어떤 텍스트든 비밀 메시지로 바꿔 보세요. 고전 암호, 현대적인 AES 암호화, 비밀번호 보호 QR 코드를 모두 오프라인으로, 휴대폰에서 바로 사용할 수 있습니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://apps.devruler.com/cipher-tools-lab/ko/">
+<meta property="og:image" content="https://apps.devruler.com/assets/icons/cipher-tools-lab.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f3ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161413" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://apps.devruler.com/cipher-tools-lab/"><link rel="alternate" hreflang="ar" href="https://apps.devruler.com/cipher-tools-lab/ar/"><link rel="alternate" hreflang="az" href="https://apps.devruler.com/cipher-tools-lab/az/"><link rel="alternate" hreflang="de" href="https://apps.devruler.com/cipher-tools-lab/de/"><link rel="alternate" hreflang="es" href="https://apps.devruler.com/cipher-tools-lab/es/"><link rel="alternate" hreflang="fr" href="https://apps.devruler.com/cipher-tools-lab/fr/"><link rel="alternate" hreflang="hi" href="https://apps.devruler.com/cipher-tools-lab/hi/"><link rel="alternate" hreflang="id" href="https://apps.devruler.com/cipher-tools-lab/id/"><link rel="alternate" hreflang="it" href="https://apps.devruler.com/cipher-tools-lab/it/"><link rel="alternate" hreflang="ja" href="https://apps.devruler.com/cipher-tools-lab/ja/"><link rel="alternate" hreflang="ko" href="https://apps.devruler.com/cipher-tools-lab/ko/"><link rel="alternate" hreflang="pt" href="https://apps.devruler.com/cipher-tools-lab/pt/"><link rel="alternate" hreflang="ru" href="https://apps.devruler.com/cipher-tools-lab/ru/"><link rel="alternate" hreflang="x-default" href="https://apps.devruler.com/cipher-tools-lab/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="app-page">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://devruler.com/" aria-label="devruler">
+      <img class="logo-light" src="/assets/devruler-logo.svg" alt="devruler" width="126" height="28">
+      <img class="logo-dark" src="/assets/devruler-logo-dark.svg" alt="devruler" width="126" height="28">
+    </a>
+    <nav aria-label="Main">
+      <a href="https://devruler.com/" class="opt2">스튜디오</a><a href="https://devruler.com/#what-we-do" class="opt">우리가 하는 일</a><a href="/" class="" aria-current="page">앱</a><a href="/#support" class="opt">지원</a>
+      <details class="langmenu"><summary aria-label="언어"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>한국어</span></summary><ul><li><a href="/cipher-tools-lab/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/cipher-tools-lab/" hreflang="tr" lang="tr" data-set-lang="tr">Türkçe</a></li><li><a href="/cipher-tools-lab/ar/" hreflang="ar" lang="ar" data-save-lang="ar">العربية</a></li><li><a href="/cipher-tools-lab/az/" hreflang="az" lang="az" data-save-lang="az">Azərbaycan</a></li><li><a href="/cipher-tools-lab/de/" hreflang="de" lang="de" data-save-lang="de">Deutsch</a></li><li><a href="/cipher-tools-lab/es/" hreflang="es" lang="es" data-save-lang="es">Español</a></li><li><a href="/cipher-tools-lab/fr/" hreflang="fr" lang="fr" data-save-lang="fr">Français</a></li><li><a href="/cipher-tools-lab/hi/" hreflang="hi" lang="hi" data-save-lang="hi">हिन्दी</a></li><li><a href="/cipher-tools-lab/id/" hreflang="id" lang="id" data-save-lang="id">Indonesia</a></li><li><a href="/cipher-tools-lab/it/" hreflang="it" lang="it" data-save-lang="it">Italiano</a></li><li><a href="/cipher-tools-lab/ja/" hreflang="ja" lang="ja" data-save-lang="ja">日本語</a></li><li><a href="/cipher-tools-lab/ko/" hreflang="ko" lang="ko" data-save-lang="ko" aria-current="true">한국어</a></li><li><a href="/cipher-tools-lab/pt/" hreflang="pt" lang="pt" data-save-lang="pt">Português</a></li><li><a href="/cipher-tools-lab/ru/" hreflang="ru" lang="ru" data-save-lang="ru">Русский</a></li></ul></details>
+      <a class="cta" href="https://devruler.com/#contact">문의</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" style="--a-bg:#0a1929;--a-surface:#10233a;--a-line:#1d3550;--a-text:#e6f1f5;--a-muted:#93a9b8;--a-accent:#3cf0a8">
+<a class="crumb" href="/">← 앱</a>
+<section class="stage">
+  <div class="stage-hero">
+    <div class="copy">
+      <div class="id"><span class="icon lg"><img src="/assets/icons/cipher-tools-lab.png" alt="" width="256" height="256" loading="lazy"></span><span class="state">출시됨 · <span class="plat">iOS + Android</span></span></div>
+      <h1>Cipher Tools</h1>
+      <p class="tag">고전 암호, AES, 비밀 QR 코드</p>
+      <p class="about">어떤 텍스트든 비밀 메시지로 바꿔 보세요. 고전 암호, 현대적인 AES 암호화, 비밀번호 보호 QR 코드를 모두 오프라인으로, 휴대폰에서 바로 사용할 수 있습니다.</p>
+      <div class="stores"><a class="store" href="https://apps.apple.com/app/id6803540894" rel="noopener"><small>iOS</small><span>App Store</span></a><a class="store" href="https://play.google.com/store/apps/details?id=com.devruler.ciphertools" rel="noopener"><small>Android</small><span>Google Play</span></a></div>
+      <p class="meta-line">App Store와 Google Play에서 무료 · 14개 언어</p>
+    </div>
+    <div class="stage-media"><video src="/assets/video/cipher-tools-lab/crack-this_ko.mp4" poster="/assets/video/cipher-tools-lab/crack-this_ko.jpg" autoplay muted loop playsinline data-autoplay aria-label="Cipher Tools promo video"></video></div>
+  </div>
+</section>
+<nav class="subnav" aria-label="Cipher Tools"><div class="tabs"><span class="name">Cipher Tools</span><a href="#features">기능</a><a href="#screens">화면</a><a href="#videos">동영상</a><a href="#languages">언어</a><a href="#help">지원</a></div><a class="get" href="#get">다운로드 ↓</a></nav>
+<section class="sec" id="features">
+  <p class="eyebrow">기능</p>
+  <div class="head"><h2>할 수 있는 것</h2></div>
+  <div class="feats"><article class="feat"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><h3>고전 암호</h3><p>카이사르, ROT13, 아트바시, 플레이페어, 비즈네르 — 암호학의 역사를 만든 알고리즘.</p></article><article class="feat"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></span><h3>현대 암호화</h3><p>원하는 비밀번호로 AES-256.</p></article><article class="feat"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v7M14 20h3"/></svg></span><h3>QR 도구</h3><p>어떤 텍스트든 QR 코드로 만들고, 올바른 비밀번호로만 열리는 비밀번호 보호 QR 코드를 만들고, 카메라로 QR 코드를 스캔해 해독.</p></article><article class="feat"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span><h3>만든 QR 코드를 갤러리에 저장하고 원하는 방식으로 공유</h3></article></div>
+</section><section class="sec" id="screens">
+  <div class="head"><div><p class="eyebrow">화면</p><h2>안을 살펴보세요.</h2></div>
+  <p>스토어 페이지의 화면입니다.</p></div>
+  <ul class="shots" aria-label="Cipher Tools screenshots"><li><img src="/assets/shots/cipher-tools-lab/ko-01.webp" alt="" width="540" height="960" loading="lazy" decoding="async"></li><li><img src="/assets/shots/cipher-tools-lab/ko-02.webp" alt="" width="540" height="960" loading="lazy" decoding="async"></li><li><img src="/assets/shots/cipher-tools-lab/ko-03.webp" alt="" width="540" height="960" loading="lazy" decoding="async"></li><li><img src="/assets/shots/cipher-tools-lab/ko-04.webp" alt="" width="540" height="960" loading="lazy" decoding="async"></li><li><img src="/assets/shots/cipher-tools-lab/ko-05.webp" alt="" width="540" height="960" loading="lazy" decoding="async"></li><li><img src="/assets/shots/cipher-tools-lab/ko-06.webp" alt="" width="540" height="960" loading="lazy" decoding="async"></li></ul>
+</section><section class="sec" id="videos"><div class="stage vids" style="--a-bg:#0a1929;--a-surface:#10233a;--a-line:#1d3550;--a-text:#e6f1f5;--a-muted:#93a9b8;--a-accent:#3cf0a8">
+  <div><p class="eyebrow">동영상</p><h2>이 암호, 풀 수 있어?</h2><p>짧은 홍보 영상, 14개 언어로 제작했습니다.</p></div>
+  <figure><video src="/assets/video/cipher-tools-lab/crack-this_ko.mp4" poster="/assets/video/cipher-tools-lab/crack-this_ko.jpg" controls playsinline preload="none" aria-label="이 암호, 풀 수 있어?"></video><figcaption><b>이 암호, 풀 수 있어?</b><span>정답을 댓글로 남겨줘 · 15 초</span></figcaption></figure><figure><video src="/assets/video/cipher-tools-lab/secret-qr_ko.mp4" poster="/assets/video/cipher-tools-lab/secret-qr_ko.jpg" controls playsinline preload="none" aria-label="비밀번호를 아는 사람만 열 수 있는 QR"></video><figcaption><b>비밀번호를 아는 사람만 열 수 있는 QR</b><span>친구에게 비밀 서프라이즈를 보내 봐 · 19 초</span></figcaption></figure>
+</div></section><section class="sec" id="languages">
+  <div class="head"><div><p class="eyebrow">언어</p><h2>14개 언어 지원.</h2></div>
+  <p>앱과 스토어 페이지가 이 언어들로 제공됩니다.</p></div>
+  <div class="langs-grid"><div><span>Türkçe</span><span>tr</span></div><div><span>English</span><span>en</span></div><div><span>Deutsch</span><span>de</span></div><div><span>Français</span><span>fr</span></div><div><span>Español</span><span>es</span></div><div><span>Italiano</span><span>it</span></div><div><span>Português</span><span>pt</span></div><div><span>Русский</span><span>ru</span></div><div><span>العربية</span><span>ar</span></div><div><span>Azərbaycan</span><span>az</span></div><div><span>हिन्दी</span><span>hi</span></div><div><span>Indonesia</span><span>id</span></div><div><span>日本語</span><span>ja</span></div><div><span>한국어</span><span>ko</span></div></div>
+</section><section class="sec" id="help">
+  <p class="eyebrow">지원 및 개인정보</p>
+  <div class="cards"><a class="linkcard" href="/cipher-tools-lab/privacy/"><span><b>개인정보 처리방침</b><small>영어 및 터키어</small></span><span class="arrow">→</span></a><a class="linkcard" href="mailto:devruler.support@gmail.com?subject=Cipher%20Tools%20support"><span><b>지원</b><small>devruler.support@gmail.com</small></span><span class="arrow">@</span></a><a class="linkcard" href="/"><span><b>다른 앱</b><small>출시됨 및 출시 예정</small></span><span class="arrow">→</span></a></div>
+</section><section class="sec" id="get"><div class="stage getband" style="--a-bg:#0a1929;--a-surface:#10233a;--a-line:#1d3550;--a-text:#e6f1f5;--a-muted:#93a9b8;--a-accent:#3cf0a8">
+  <div class="id"><span class="icon lg"><img src="/assets/icons/cipher-tools-lab.png" alt="" width="256" height="256" loading="lazy"></span><div><h2>Cipher Tools 다운로드</h2><p>스토어에서 “Cipher Tools” 검색</p></div></div>
+  <div class="stores"><a class="store" href="https://apps.apple.com/app/id6803540894" rel="noopener"><small>iOS</small><span>App Store</span></a><a class="store" href="https://play.google.com/store/apps/details?id=com.devruler.ciphertools" rel="noopener"><small>Android</small><span>Google Play</span></a></div>
+</div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap cols">
+    <div class="about">
+      <a href="https://devruler.com/" aria-label="devruler">
+        <img class="logo-light" src="/assets/devruler-logo.svg" alt="devruler" width="108" height="24">
+        <img class="logo-dark" src="/assets/devruler-logo-dark.svg" alt="devruler" width="108" height="24">
+      </a>
+      <p>자체 모바일 앱을 만드는 독립 스튜디오.</p>
+    </div>
+    <div><h2>스튜디오</h2><ul>
+      <li><a href="https://devruler.com/#what-we-do">우리가 하는 일</a></li>
+      <li><a href="https://devruler.com/#process">프로세스</a></li>
+      <li><a href="https://devruler.com/#contact">문의</a></li></ul></div>
+    <div><h2>앱</h2><ul>
+      <li><a href="/#available">출시됨</a></li>
+      <li><a href="/#coming-soon">출시 예정</a></li>
+      <li><a href="/#lab">작업실에서</a></li></ul></div>
+    <div><h2>지원</h2><ul>
+      <li><a href="/#policies">개인정보 처리방침</a></li>
+      <li><a href="/#policies">계정 삭제</a></li>
+      <li><a href="mailto:devruler.support@gmail.com">devruler.support@gmail.com</a></li></ul></div>
+  </div>
+  <div class="wrap base"><span>© 2026 devruler</span><span class="mono">아이디어를 재고, 다듬고, 출시합니다.</span></div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -4,8 +4,11 @@
 // - catalog filter and search
 (function () {
   var KEY = "devruler-lang";
+  // Pages with <html data-fixed-lang> (e.g. /cipher-tools-lab/ja/) are written in one language:
+  // they never switch, they only remember a choice made in the language menu.
+  var fixed = document.documentElement.hasAttribute("data-fixed-lang");
   function readCookie() {
-    var m = document.cookie.match(/(?:^|;\s*)devruler-lang=(en|tr)/);
+    var m = document.cookie.match(/(?:^|;\s*)devruler-lang=(en|tr)(?:;|$)/);
     return m ? m[1] : null;
   }
   function initial() {
@@ -47,10 +50,25 @@
   }
 
   document.addEventListener("click", function (e) {
-    var b = e.target.closest && e.target.closest("[data-set-lang]");
-    if (b) { var l = b.getAttribute("data-set-lang"); apply(l); save(l); }
+    if (!e.target.closest) return;
+    var b = e.target.closest("[data-set-lang]");
+    if (b) {
+      var l = b.getAttribute("data-set-lang");
+      save(l);
+      // On a two-language page an EN/TR menu link to the same page just switches in place.
+      if (!fixed) {
+        apply(l);
+        if (b.tagName === "A" && b.pathname === location.pathname) {
+          e.preventDefault();
+          var d = b.closest("details"); if (d) d.removeAttribute("open");
+        }
+      }
+      return;
+    }
+    var s = e.target.closest("[data-save-lang]");
+    if (s) save(s.getAttribute("data-save-lang"));
   });
-  apply(initial());
+  if (!fixed) apply(initial());
   if (reduce) document.querySelectorAll("video[data-autoplay]").forEach(function (v) { v.pause(); v.removeAttribute("autoplay"); });
 
   // catalog: filter by type + search
