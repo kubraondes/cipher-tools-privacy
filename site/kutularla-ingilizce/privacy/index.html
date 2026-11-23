@@ -48,9 +48,9 @@
   
 
 <h1>Kutularla İngilizce</h1>
-<p class="updated">Son Güncelleme: 29 Ekim 2026</p>
+<p class="updated">Son Güncelleme: 23 Kasım 2026</p>
 
-<p>Kutularla İngilizce (“Uygulama”), kullanıcıların İngilizce kelime öğrenmesine yardımcı olmak amacıyla geliştirilmiş bir eğitim uygulamasıdır. Bu gizlilik politikası, uygulamayı kullandığınızda hangi verilerin toplandığını, nasıl kullanıldığını, kimlerle paylaşıldığını ve nasıl korunduğunu açıklamaktadır.</p>
+<p>Kutularla İngilizce (“Uygulama”), kullanıcıların İngilizce kelime öğrenmesine yardımcı olmak amacıyla devruler tarafından geliştirilmiş bir eğitim uygulamasıdır. Bu gizlilik politikası, uygulamayı kullandığınızda hangi verilerin toplandığını, nasıl kullanıldığını, kimlerle paylaşıldığını ve nasıl korunduğunu açıklamaktadır.</p>
 
 <hr>
 
@@ -101,9 +101,8 @@
 <ul>
   <li>Hata kaydı ve hatanın oluştuğu kod konumu</li>
   <li>Cihaz ve uygulama bilgileri (model, işletim sistemi, uygulama sürümü)</li>
-  <li>Uygulamanın performansına ilişkin ölçümler</li>
 </ul>
-<p>Hata raporlarına adınız, e-posta adresiniz gibi kişisel veriler eklenmez; ekran görüntüsü alınmaz. Raporlar yalnızca uygulamadaki teknik sorunları bulmak ve gidermek için kullanılır.</p>
+<p>Hata raporlarına adınız, e-posta adresiniz gibi kişisel veriler eklenmez; ekran görüntüsü alınmaz. Raporlar önce sunucumuza gelir ve oradan Sentry’ye iletilir; sunucumuz raporu saklamaz ve IP adresinizi Sentry’ye aktarmaz. Raporlar yalnızca uygulamadaki teknik sorunları bulmak ve gidermek için kullanılır.</p>
 
 <hr>
 
@@ -125,7 +124,8 @@
 
 <h2>3. Bilgilerin Saklanması ve Güvenliği</h2>
 <ul>
-  <li>Hesap ve öğrenme verileriniz, kendi kontrolümüzdeki sunucularda barındırılan PostgreSQL veritabanında saklanır.</li>
+  <li>Hesap ve öğrenme verileriniz, kendi kontrolümüzdeki, Türkiye’de bulunan sunucularda barındırılan PostgreSQL veritabanında saklanır.</li>
+  <li>Sunucu erişim kayıtları (IP adresi, istek zamanı ve istenen adres) güvenlik ve hata ayıklama amacıyla tutulur; bu kayıtlar öğrenme verilerinizi içermez ve en fazla 30 gün içinde silinir.</li>
   <li>Uygulama ile sunucu arasındaki tüm iletişim HTTPS (TLS) ile şifrelenir.</li>
   <li>Oturum bilgileriniz (erişim ve yenileme anahtarları) cihazınızda işletim sisteminin güvenli deposunda (iOS Keychain / Android Keystore) tutulur.</li>
   <li>Verilerinize yalnızca ilgili kullanıcı, kendi oturumu üzerinden erişebilir.</li>
@@ -145,7 +145,7 @@
   <li>Google User Messaging Platform (reklam rızası yönetimi)</li>
   <li>Google Sign-In (kimlik doğrulama)</li>
   <li>Apple ile Giriş Yap (kimlik doğrulama)</li>
-  <li>Sentry (uygulama hata raporlaması; kişisel veri içermeyen hata ve cihaz bilgisi)</li>
+  <li>Sentry (uygulama hata raporlaması; sunucumuz üzerinden iletilen, kişisel veri içermeyen hata ve cihaz bilgisi)</li>
 </ul>
 <p>Bu hizmetler kendi gizlilik politikalarına tabidir. Google’ın uygulama geliştiricilerinin hizmetlerini kullanırken verileri nasıl işlediği hakkında bilgiye <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> adresinden, Apple’ın gizlilik politikasına <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a> adresinden, Sentry’nin gizlilik politikasına <a href="https://sentry.io/privacy/">sentry.io/privacy</a> adresinden ulaşabilirsiniz.</p>
 
@@ -184,7 +184,15 @@
 
 <hr>
 
-<h2>9. İletişim</h2>
+<h2>9. Veri Sorumlusu ve KVKK Kapsamındaki Haklarınız</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında veri sorumlusu, uygulamanın bireysel geliştiricisi devruler’dir (Kübra Öndeş).</p>
+<p>Hesap ve öğrenme verileriniz, uygulamanın size sunulabilmesi ve kullanım ilişkisinin yürütülmesi; güvenlik kayıtları ve hata raporları meşru menfaatimiz; kişiselleştirilmiş reklam ve izleme ise açık rızanız hukuki sebebine dayanılarak işlenir. Açık rızanızı uygulamadaki reklam tercihlerinden ve cihaz ayarlarından istediğiniz zaman geri alabilirsiniz.</p>
+<p>Hesap ve öğrenme verileriniz Türkiye’deki sunucumuzda tutulur. Reklam (Google AdMob, Google User Messaging Platform), kimlik doğrulama (Google, Apple) ve hata raporlama (Sentry) hizmetleri yurt dışındaki sağlayıcılar tarafından sunulur; bu hizmetlerin kullanımına ilişkin veriler yurt dışına aktarılabilir.</p>
+<p>KVKK’nın 11. maddesi uyarınca kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini ya da yok edilmesini isteme, bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz. Taleplerinizi aşağıdaki e-posta adresine iletebilirsiniz; en geç 30 gün içinde yanıtlanır.</p>
+
+<hr>
+
+<h2>10. İletişim</h2>
 <p>Gizlilik politikası ile ilgili sorularınız ve veri talepleriniz için bizimle iletişime geçebilirsiniz:</p>
 <p>E-posta: <a href="mailto:devruler.support@gmail.com">devruler.support@gmail.com</a></p>
 
